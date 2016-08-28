@@ -4,12 +4,32 @@
   
     
     <entry>
-      <title><![CDATA[first]]></title>
+      <title><![CDATA[markdown]]></title>
+      <url>http://shy0316.github.io/2016/08/28/markdown/</url>
+      <content type="html"><![CDATA[<p>  markdown标记语言用法<br>  <a id="more"></a></p>
+<h1 id="markdown标记语言"><a href="#markdown标记语言" class="headerlink" title="markdown标记语言"></a>markdown标记语言</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p><img src="/images/markdown1.png" alt="title"></p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><img src="/images/markdown2.png" alt="list"></p>
+<h2 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a>链接和图片</h2><p><img src="/images/markdown3.png" alt="title"></p>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p><img src="/images/markdown4.png" alt="title"></p>
+<h2 id="粗体和斜体"><a href="#粗体和斜体" class="headerlink" title="粗体和斜体"></a>粗体和斜体</h2><p><img src="/images/markdown5.png" alt="title"></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p><img src="/images/markdown6.png" alt="title"><br><img src="/images/markdown7.png" alt="title"></p>
+<p>##常见语法错误<br>效果不出来–注意应该有的空格及每行从头写起</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[First Blog]]></title>
       <url>http://shy0316.github.io/2016/08/27/first/</url>
-      <content type="html"><![CDATA[<p>first blog</p>
+      <content type="html"><![CDATA[<p><strong>博客创建所需软件的安装过程及常见问题</strong></p>
 <a id="more"></a>
-<p>FAQ:<br>1.hexo+github做个人博客所需安装？<br>    .node.js<br>    .github(需要配置ssh)</p>
-<p>2.右击选git bash here<br>      用命令行安装hexo    步骤见： </p>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ:"></a><em>FAQ</em>:</h2><h3 id="1、hexo-github做个人博客所需安装？"><a href="#1、hexo-github做个人博客所需安装？" class="headerlink" title="1、hexo+github做个人博客所需安装？"></a>1、hexo+github做个人博客所需安装？</h3><ul>
+<li>node.js</li>
+<li>github(需要配置ssh)</li>
+<li>安装好后右击选git bash here，用命令行安装hexo，步骤见以下链接<br><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">github和hexo创建博客过程–版本1</a><br><a href="http://sunwhut.com/2015/10/30/buildBlog/" target="_blank" rel="external">github和hexo创建博客过程–版本2</a><br><a href="http://beiyuu.com/github-pages" target="_blank" rel="external">github和hexo创建博客过程–版本3</a>      </li>
+</ul>
+<hr>
+<h3 id="2、hexo安装常见问题"><a href="#2、hexo安装常见问题" class="headerlink" title="2、hexo安装常见问题"></a>2、hexo安装常见问题</h3><p><img src="/images/first1.png" alt=""><br><img src="/images/first2.png" alt=""></p>
+<hr>
 ]]></content>
     </entry>
     
