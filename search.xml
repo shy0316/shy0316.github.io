@@ -36,7 +36,7 @@
       <url>http://shy0316.github.io/2016/08/27/first/</url>
       <content type="html"><![CDATA[<p><strong>博客创建所需软件的安装过程及常见问题</strong></p>
 <a id="more"></a>
-<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ:"></a><em>FAQ</em>:</h2><h3 id="1、hexo-github做个人博客所需安装？"><a href="#1、hexo-github做个人博客所需安装？" class="headerlink" title="1、hexo+github做个人博客所需安装？"></a>1、hexo+github做个人博客所需安装？</h3><ul>
+<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ:"></a><em>FAQ</em>:</h2><h3 id="1、hexo-github做个人博客"><a href="#1、hexo-github做个人博客" class="headerlink" title="1、hexo+github做个人博客"></a>1、hexo+github做个人博客</h3><ul>
 <li>node.js</li>
 <li>github(需要配置ssh)</li>
 <li>安装好后右击选git bash here，用命令行安装hexo，步骤见以下链接<br><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">github和hexo创建博客过程–版本1</a><br><a href="http://sunwhut.com/2015/10/30/buildBlog/" target="_blank" rel="external">github和hexo创建博客过程–版本2</a><br><a href="http://beiyuu.com/github-pages" target="_blank" rel="external">github和hexo创建博客过程–版本3</a>      </li>
@@ -44,6 +44,12 @@
 <hr>
 <h3 id="2、hexo安装常见问题"><a href="#2、hexo安装常见问题" class="headerlink" title="2、hexo安装常见问题"></a>2、hexo安装常见问题</h3><p><img src="/images/first1.png" alt=""><br><img src="/images/first2.png" alt=""></p>
 <hr>
+<h3 id="3、hexo安装好后写博客时常用命令"><a href="#3、hexo安装好后写博客时常用命令" class="headerlink" title="3、hexo安装好后写博客时常用命令"></a>3、hexo安装好后写博客时常用命令</h3><ul>
+<li>hexo clean</li>
+<li>hexo g  </li>
+<li>hexo s（去localhost:4000看效果）</li>
+<li>hexo d(发布至github)，输入此命令会弹出框，依次输入用户名和密码</li>
+</ul>
 ]]></content>
     </entry>
     
