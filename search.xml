@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[阿里云域名绑定]]></title>
+      <url>http://shy0316.github.io/2016/09/02/%E9%98%BF%E9%87%8C%E4%BA%91%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/</url>
+      <content type="html"><![CDATA[<p>阿里云域名绑定<br> <a id="more"></a></p>
+<h2 id="1-在自己的博客目录的source文件里增加一个文件名为CNAME-注意大写-，里面内容编辑为你要绑定的域名，比如-shy0316-com-之后hexo-d-一下"><a href="#1-在自己的博客目录的source文件里增加一个文件名为CNAME-注意大写-，里面内容编辑为你要绑定的域名，比如-shy0316-com-之后hexo-d-一下" class="headerlink" title="1.在自己的博客目录的source文件里增加一个文件名为CNAME(注意大写)，里面内容编辑为你要绑定的域名，比如:shy0316.com,之后hexo d 一下"></a>1.在自己的博客目录的source文件里增加一个文件名为CNAME(注意大写)，里面内容编辑为你要绑定的域名，比如:shy0316.com,之后hexo d 一下</h2><h2 id="2-ping一下自己的github-pages的ip地址"><a href="#2-ping一下自己的github-pages的ip地址" class="headerlink" title="2.ping一下自己的github pages的ip地址"></a>2.ping一下自己的github pages的ip地址</h2><pre><code>ping 你的github pages名.github.io
+</code></pre><h2 id="3-去阿里云控制台添加2条"><a href="#3-去阿里云控制台添加2条" class="headerlink" title="3.去阿里云控制台添加2条"></a>3.去阿里云控制台添加2条</h2><pre><code>设置主机记录www，记录类型为A，记录值是刚Github Pages服务器指定的IP地址，访问该IP地址即表示访问Github Pages。
+设置主机记录@，记录类型为A，记录值是刚Github Pages服务器指定的IP地址，访问该IP地址即表示访问Github Pages。
+</code></pre><h2 id="4-之后就可以通过自己域名访问了，可以再Ping一下自己的域名看设置对不对，是否两者的ip地址一样。"><a href="#4-之后就可以通过自己域名访问了，可以再Ping一下自己的域名看设置对不对，是否两者的ip地址一样。" class="headerlink" title="4.之后就可以通过自己域名访问了，可以再Ping一下自己的域名看设置对不对，是否两者的ip地址一样。"></a>4.之后就可以通过自己域名访问了，可以再Ping一下自己的域名看设置对不对，是否两者的ip地址一样。</h2>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[天空]]></title>
       <url>http://shy0316.github.io/2016/08/28/photo1/</url>
       <content type="html"><![CDATA[<p><img src="/blogimgs/1.jpg" alt=""><br><a id="more"></a><br><img src="/blogimgs/2.jpg" alt=""><br><img src="/blogimgs/3.jpg" alt=""></p>
