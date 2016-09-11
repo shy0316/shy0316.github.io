@@ -90,10 +90,12 @@
 <meta property="og:url" content="http://shy0316.github.io/2016/09/11/tomcat/index.html">
 <meta property="og:site_name" content="SHY'S BLOG">
 <meta property="og:description" content="Tomcat 安装">
-<meta property="og:updated_time" content="2016-09-11T14:02:36.083Z">
+<meta property="og:image" content="http://shy0316.github.io/images/tomcat1.png">
+<meta property="og:updated_time" content="2016-09-11T14:20:45.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tomcat">
 <meta name="twitter:description" content="Tomcat 安装">
+<meta name="twitter:image" content="http://shy0316.github.io/images/tomcat1.png">
 
 
 
@@ -343,17 +345,12 @@
         <p>Tomcat 安装<br><a id="more"></a></p>
 <h2 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h2><p><strong> jdk有的情况下 </strong></p>
 <ol>
-<li>去官网下载通用版本的压缩版tomcat<br><a href="http://tomcat.apache.org/" target="_blank" rel="external">tomcat官网</a></li>
-<li>解压后， 如果是解压版的配置环境变量如下：CATALINA_HOME 值：D:\JavaTool\tomcat-5.5.9   （tomcat安装目录）</li>
+<li>去官网下载通用版本的压缩版tomcat<br><a href="http://tomcat.apache.org/" target="_blank" rel="external">tomcat官网链接</a></li>
+<li>解压后，如果是解压版的配置环境变量如下：CATALINA_HOME 值：D:\JavaTool\tomcat-5.5.9（tomcat安装目录）</li>
 <li>去bin文件下有Tomcat服务器启动文件startuo.bat（window平台下的批处理文件）或者startup.sh(linux平台的脚本文件),双击运行    </li>
-<li>去浏览器访问localhost:8080看是否出现tomcat正常页面<br><strong> ps: </strong> </li>
-</ol>
-<ul>
-<li>/conf/server.xml中可以改服务端口</li>
-<li>/webapps/下是运行、发布目录，是web项目放置地，开发目录在eclipse下的workspace</li>
-</ul>
-<ol>
-<li>正常访问后，去eclipse等开发环境配置，window-perference-左侧server-runtime environment-add-选择tomcat<br>6.结束，编写自己的第一个程序发布一下，看webapps下是否有自己新建的应用</li>
+<li>去浏览器访问localhost:8080看是否出现tomcat正常页面<br><strong> ps: </strong> /conf/server.xml中可以改服务端口  /webapps/下是运行、发布目录，是web项目放置地，开发目录在eclipse下的workspace</li>
+<li>正常访问后，去eclipse等开发环境配置，window-perference-左侧server-runtime environment-add-选择tomcat</li>
+<li>编写自己的第一个程序发布一下，看webapps下是否有自己新建的应用<br>8.若webapps下没有，可能的原因：eclipse中window-show view-server，双击自己的tomcat，出现如下视图，有些配置不可以改，然后在server视图下将自己的服务器下的项目先右击remove，再将<br>，然后点tomcat server右击clean一下，图中第二步就可以改，选中第二个，第三步，daploy path里browse自己的路径即运行目录，保存一下，就好；<br><img src="/images/tomcat1.png" alt=""></li>
 </ol>
 
       
