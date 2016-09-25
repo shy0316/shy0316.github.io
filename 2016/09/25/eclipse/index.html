@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="exclipse,乱码," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="欢迎来到吃货的世界.....">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SHY'S BLOG">
-<meta property="og:url" content="http://shy0316.github.io/categories/标记语言/index.html">
+<meta name="description" content="eclipse导入项目时java文件乱码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="eclipse">
+<meta property="og:url" content="http://shy0316.github.io/2016/09/25/eclipse/index.html">
 <meta property="og:site_name" content="SHY'S BLOG">
-<meta property="og:description" content="欢迎来到吃货的世界.....">
+<meta property="og:description" content="eclipse导入项目时java文件乱码">
+<meta property="og:updated_time" content="2016-09-25T14:56:01.376Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SHY'S BLOG">
-<meta name="twitter:description" content="欢迎来到吃货的世界.....">
+<meta name="twitter:title" content="eclipse">
+<meta name="twitter:description" content="eclipse导入项目时java文件乱码">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://shy0316.github.io/categories/标记语言/"/>
+  <link rel="canonical" href="http://shy0316.github.io/2016/09/25/eclipse/"/>
 
-  <title> 分类: 标记语言 | SHY'S BLOG </title>
+  <title> eclipse | SHY'S BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -262,47 +263,194 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        标记语言
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                eclipse
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-25T22:53:07+08:00" content="2016-09-25">
+              2016-09-25
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/25/eclipse/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/25/eclipse/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/25/eclipse/" class="leancloud_visitors" data-flag-title="eclipse">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>eclipse导入项目时java文件乱码<br><a id="more"></a><br>1、编码不对</p>
+<ul>
+<li>对某文件或某工程更改编码：<br>鼠标移到工程名或文件名，右键-&gt;Properties-&gt;Resource-&gt;Text file enCoding -&gt;更改编码（GBK、UTF-8等）-&gt;Apply-&gt;OK退出</li>
+<li>修改整个命名空间的编码<br> eclipse菜单栏-&gt;Window-&gt;Preferences(preferences一般就是修改各种eclipse设置的地方)-&gt;General-&gt;Workspace-&gt;text file encoding -&gt;更改编码（GBK、UTF-8等）-&gt;Apply-&gt;OK退出</li>
+<li>修改某个特定类型的文件（如xml文件、java文件类型）的编码（不会受命名空间编码的影响）<br>eclipse菜单栏-&gt;Window-&gt;Preferences-&gt;General-&gt;Content types-&gt;在右视图中选在文件类型-&gt;在Default enCoding中选择语言-&gt;Update-&gt;Ok退出<br>注意：若下拉菜单栏里面没有你要的语言类型，可以自己用键盘打一个进去。如果没有改语言类型，eclipse自然会报错，没有报错就说明可以用改语言类型。</li>
+</ul>
+<p>2、maven的问题</p>
+<ul>
+<li>eclipse菜单栏-&gt;Window-&gt;Preferences-&gt;Maven-&gt;Installations-&gt;User Settings-&gt;导入maven的settings.xml文件-&gt;Refresh<br>但是目前maven为什么会导致乱码不知道- -</li>
+</ul>
+<p>3、 两个工程不同编码方式放到一个工作空间里面有可能会有冲突。可以尝试着别放到一个工作空间里面看看可不可以解决问题</p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/08/28/markdown/" itemprop="url">
-              
-                <span itemprop="name">markdown</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat_pay.JPG" alt="shyvampire WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.JPG" alt="shyvampire Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-28T16:21:38+08:00"
-              content="2016-08-28" >
-          08-28
-        </time>
-      </div>
 
-    </header>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/exclipse/" rel="tag">#exclipse</a>
+          
+            <a href="/tags/乱码/" rel="tag">#乱码</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/20/jsarray/" rel="next" title="jsarray">
+                <i class="fa fa-chevron-left"></i> jsarray
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
+      
+    </div>
+  </div>
 
 
           </div>
@@ -310,6 +458,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/25/eclipse/"
+           data-title="eclipse" data-url="http://shy0316.github.io/2016/09/25/eclipse/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -329,8 +485,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/1.png"
@@ -400,6 +565,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -503,6 +679,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

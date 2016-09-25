@@ -4,6 +4,23 @@
   
     
     <entry>
+      <title><![CDATA[eclipse]]></title>
+      <url>http://shy0316.github.io/2016/09/25/eclipse/</url>
+      <content type="html"><![CDATA[<p>eclipse导入项目时java文件乱码<br><a id="more"></a><br>1、编码不对</p>
+<ul>
+<li>对某文件或某工程更改编码：<br>鼠标移到工程名或文件名，右键-&gt;Properties-&gt;Resource-&gt;Text file enCoding -&gt;更改编码（GBK、UTF-8等）-&gt;Apply-&gt;OK退出</li>
+<li>修改整个命名空间的编码<br> eclipse菜单栏-&gt;Window-&gt;Preferences(preferences一般就是修改各种eclipse设置的地方)-&gt;General-&gt;Workspace-&gt;text file encoding -&gt;更改编码（GBK、UTF-8等）-&gt;Apply-&gt;OK退出</li>
+<li>修改某个特定类型的文件（如xml文件、java文件类型）的编码（不会受命名空间编码的影响）<br>eclipse菜单栏-&gt;Window-&gt;Preferences-&gt;General-&gt;Content types-&gt;在右视图中选在文件类型-&gt;在Default enCoding中选择语言-&gt;Update-&gt;Ok退出<br>注意：若下拉菜单栏里面没有你要的语言类型，可以自己用键盘打一个进去。如果没有改语言类型，eclipse自然会报错，没有报错就说明可以用改语言类型。</li>
+</ul>
+<p>2、maven的问题</p>
+<ul>
+<li>eclipse菜单栏-&gt;Window-&gt;Preferences-&gt;Maven-&gt;Installations-&gt;User Settings-&gt;导入maven的settings.xml文件-&gt;Refresh<br>但是目前maven为什么会导致乱码不知道- -</li>
+</ul>
+<p>3、 两个工程不同编码方式放到一个工作空间里面有可能会有冲突。可以尝试着别放到一个工作空间里面看看可不可以解决问题</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[jsarray]]></title>
       <url>http://shy0316.github.io/2016/09/20/jsarray/</url>
       <content type="html"><![CDATA[<p>javascript–Array对象的常用属性和方法<br><a id="more"></a></p>
