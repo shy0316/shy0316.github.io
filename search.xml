@@ -5,8 +5,9 @@
     
     <entry>
       <title><![CDATA[db]]></title>
-      <url>http://shy0316.github.io/2016/09/30/db/</url>
-      <content type="html"><![CDATA[<p>#DDL,DML,DCL#<br><a id="more"></a><br>1、 <em>DDL</em>(data definition language):<br>   DDL比DML要多，主要的命令有CREATE,ALTER,DROP等，DD主要用在定义和改变表结构，数据类型，<br>   表之间的连接和约束等初始化工作上的，大多在建表时使用<br>2、<em>DML</em>(data manipulation language):<br>   它们是SELECT,UPDATE,INSERT,DELETE,对数据库里的数据进行操作的语言<br>3、 <em>DCL</em>(data control language)<br>    是数据库控制功能。用来设置或更改数据库用户或角色权限的语句，如grant,deny,revoke等</p>
+      <url>http://shy0316.github.io/2016/09/30/DDL/</url>
+      <content type="html"><![CDATA[<h1 id="DDL-DML-DCL"><a href="#DDL-DML-DCL" class="headerlink" title="DDL,DML,DCL"></a>DDL,DML,DCL</h1><a id="more"></a>
+<p>1、 <strong>DDL</strong>(data definition language):<br>   DDL比DML要多，主要的命令有CREATE,ALTER,DROP等，DD主要用在定义和改变表结构，数据类型，<br>   表之间的连接和约束等初始化工作上的，大多在建表时使用<br>2、<strong>DML</strong>(data manipulation language):<br>   它们是SELECT,UPDATE,INSERT,DELETE,对数据库里的数据进行操作的语言<br>3、 <strong>DCL</strong>(data control language)<br>    是数据库控制功能。用来设置或更改数据库用户或角色权限的语句，如grant,deny,revoke等</p>
 <pre><code>在默认状态下，只有sysadmin,dbcreator,db_owner或db_securityadmin等人员才有权力执行DCL；
 </code></pre><hr>
 <h2 id="详细解释："><a href="#详细解释：" class="headerlink" title="详细解释："></a>详细解释：</h2><p>一、DDL is Data Definition Language statements. Some examples:数据定义语言，用于定义和管理 SQL 数据库中的所有对象的语言 </p>
