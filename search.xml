@@ -4,6 +4,42 @@
   
     
     <entry>
+      <title><![CDATA[db]]></title>
+      <url>http://shy0316.github.io/2016/09/30/db/</url>
+      <content type="html"><![CDATA[<p>#DDL,DML,DCL#<br><a id="more"></a><br>1、 <em>DDL</em>(data definition language):<br>   DDL比DML要多，主要的命令有CREATE,ALTER,DROP等，DD主要用在定义和改变表结构，数据类型，<br>   表之间的连接和约束等初始化工作上的，大多在建表时使用<br>2、<em>DML</em>(data manipulation language):<br>   它们是SELECT,UPDATE,INSERT,DELETE,对数据库里的数据进行操作的语言<br>3、 <em>DCL</em>(data control language)<br>    是数据库控制功能。用来设置或更改数据库用户或角色权限的语句，如grant,deny,revoke等</p>
+<pre><code>在默认状态下，只有sysadmin,dbcreator,db_owner或db_securityadmin等人员才有权力执行DCL；
+</code></pre><hr>
+<h2 id="详细解释："><a href="#详细解释：" class="headerlink" title="详细解释："></a>详细解释：</h2><p>一、DDL is Data Definition Language statements. Some examples:数据定义语言，用于定义和管理 SQL 数据库中的所有对象的语言 </p>
+<ol>
+<li>CREATE - to create objects in the database 创建 </li>
+<li>ALTER - alters the structure of the database 修改 </li>
+<li>DROP - delete objects from the database 删除 </li>
+<li>TRUNCATE - remove all records from a table, including all spaces allocated for the records are removed<br>TRUNCATE TABLE [Table Name]。<br>　　 下面是对Truncate语句在MSSQLServer2000中用法和原理的说明：<br>　　 Truncate table 表名 速度快,而且效率高,因为:<br>　　 TRUNCATE TABLE 在功能上与不带 WHERE 子句的 DELETE 语句相同：二者均删除表中的全部行。但 TRUNCATE TABLE 比 DELETE 速度快，且使用的系统和事务日志资源少。<br>　　 DELETE 语句每次删除一行，并在事务日志中为所删除的每行记录一项。TRUNCATE TABLE 通过释放存储表数据所用的数据页来删除数据，并且只在事务日志中记录页的释放。<br>　　 TRUNCATE TABLE 删除表中的所有行，但表结构及其列、约束、索引等保持不变。新行标识所用的计数值重置为该列的种子。如果想保留标识计数值，请改用 DELETE。如果要删除表定义及其数据，请使用 DROP TABLE 语句。<br>　　 对于由 FOREIGN KEY 约束引用的表，不能使用 TRUNCATE TABLE，而应使用不带 WHERE 子句的 DELETE 语句。由于 TRUNCATE TABLE 不记录在日志中，所以它不能激活触发器。<br>　　TRUNCATE TABLE 不能用于参与了索引视图的表。 </li>
+<li>COMMENT - add comments to the data dictionary 注释 </li>
+<li>GRANT - gives user’s access privileges to database 授权 </li>
+<li>REVOKE - withdraw access privileges given with the GRANT command 收回已经授予的权限</li>
+</ol>
+<p>二、DML is Data Manipulation Language statements. Some examples:数据操作语言，SQL中处理数据等操作统称为数据操纵语言 </p>
+<ol>
+<li>SELECT - retrieve data from the a database 查询 </li>
+<li>INSERT - insert data into a table 添加 </li>
+<li>UPDATE - updates existing data within a table 更新 </li>
+<li>DELETE - deletes all records from a table, the space for the records remain 删除 </li>
+<li>CALL - call a PL/SQL or Java subprogram </li>
+<li>EXPLAIN PLAN - explain access path to data<br>Oracle RDBMS执行每一条SQL语句，都必须经过Oracle优化器的评估。所以，了解优化器是如何选择(搜索)路径以及索引是如何被使用的，对优化SQL语句有很大的帮助。Explain可以用来迅速方便地查出对于给定SQL语句中的查询数据是如何得到的即搜索路径(我们通常称为Access Path)。从而使我们选择最优的查询方式达到最大的优化效果。 </li>
+<li>LOCK TABLE - control concurrency 锁，用于控制并发 </li>
+</ol>
+<p>三、DCL is Data Control Language statements. Some examples:数据控制语言，用来授予或回收访问数据库的某种特权，并控制数据库操纵事务发生的时间及效果，对数据库实行监视等 </p>
+<ol>
+<li>COMMIT - save work done 提交 </li>
+<li>SAVEPOINT - identify a point in a transaction to which you can later roll back 保存点 </li>
+<li>ROLLBACK - restore database to original since the last COMMIT 回滚 </li>
+<li>SET TRANSACTION - Change transaction options like what rollback segment to use 设置当前事务的特性，它对后面的事务没有影响． </li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[eclipse]]></title>
       <url>http://shy0316.github.io/2016/09/25/eclipse/</url>
       <content type="html"><![CDATA[<p>eclipse导入项目时java文件乱码<br><a id="more"></a><br>1、编码不对</p>
