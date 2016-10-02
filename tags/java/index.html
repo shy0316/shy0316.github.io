@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="DDL,DML,DCL," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,15 @@
 
 
 
-<meta name="description" content="#DDL,DML,DCL#">
-<meta property="og:type" content="article">
-<meta property="og:title" content="db">
-<meta property="og:url" content="http://shy0316.github.io/2016/09/30/db/index.html">
+<meta name="description" content="欢迎来到吃货的世界.....">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SHY'S BLOG">
+<meta property="og:url" content="http://shy0316.github.io/tags/java/index.html">
 <meta property="og:site_name" content="SHY'S BLOG">
-<meta property="og:description" content="#DDL,DML,DCL#">
-<meta property="og:updated_time" content="2016-09-30T14:52:15.828Z">
+<meta property="og:description" content="欢迎来到吃货的世界.....">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="db">
-<meta name="twitter:description" content="#DDL,DML,DCL#">
+<meta name="twitter:title" content="SHY'S BLOG">
+<meta name="twitter:description" content="欢迎来到吃货的世界.....">
 
 
 
@@ -114,9 +113,9 @@
 
 
 
-  <link rel="canonical" href="http://shy0316.github.io/2016/09/30/db/"/>
+  <link rel="canonical" href="http://shy0316.github.io/tags/java/"/>
 
-  <title> db | SHY'S BLOG </title>
+  <title> 标签: java | SHY'S BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,7 +136,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -263,215 +262,46 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <div id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        java
+        <small>标签</small>
+      </h2>
+    </div>
 
     
-      <header class="post-header">
+      
 
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2016/10/02/java-comparator/" itemprop="url">
               
-                db
+                <span itemprop="name">java comparator</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-30T22:37:32+08:00" content="2016-09-30">
-              2016-09-30
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-10-02T19:09:43+08:00"
+              content="2016-10-02" >
+          10-02
+        </time>
+      </div>
 
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/30/db/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/30/db/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/09/30/db/" class="leancloud_visitors" data-flag-title="db">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>#DDL,DML,DCL#<br><a id="more"></a><br>1、 <em>DDL</em>(data definition language):<br>   DDL比DML要多，主要的命令有CREATE,ALTER,DROP等，DD主要用在定义和改变表结构，数据类型，<br>   表之间的连接和约束等初始化工作上的，大多在建表时使用<br>2、<em>DML</em>(data manipulation language):<br>   它们是SELECT,UPDATE,INSERT,DELETE,对数据库里的数据进行操作的语言<br>3、 <em>DCL</em>(data control language)<br>    是数据库控制功能。用来设置或更改数据库用户或角色权限的语句，如grant,deny,revoke等</p>
-<pre><code>在默认状态下，只有sysadmin,dbcreator,db_owner或db_securityadmin等人员才有权力执行DCL；
-</code></pre><hr>
-<h2 id="详细解释："><a href="#详细解释：" class="headerlink" title="详细解释："></a>详细解释：</h2><p>一、DDL is Data Definition Language statements. Some examples:数据定义语言，用于定义和管理 SQL 数据库中的所有对象的语言 </p>
-<ol>
-<li>CREATE - to create objects in the database 创建 </li>
-<li>ALTER - alters the structure of the database 修改 </li>
-<li>DROP - delete objects from the database 删除 </li>
-<li>TRUNCATE - remove all records from a table, including all spaces allocated for the records are removed<br>TRUNCATE TABLE [Table Name]。<br>　　 下面是对Truncate语句在MSSQLServer2000中用法和原理的说明：<br>　　 Truncate table 表名 速度快,而且效率高,因为:<br>　　 TRUNCATE TABLE 在功能上与不带 WHERE 子句的 DELETE 语句相同：二者均删除表中的全部行。但 TRUNCATE TABLE 比 DELETE 速度快，且使用的系统和事务日志资源少。<br>　　 DELETE 语句每次删除一行，并在事务日志中为所删除的每行记录一项。TRUNCATE TABLE 通过释放存储表数据所用的数据页来删除数据，并且只在事务日志中记录页的释放。<br>　　 TRUNCATE TABLE 删除表中的所有行，但表结构及其列、约束、索引等保持不变。新行标识所用的计数值重置为该列的种子。如果想保留标识计数值，请改用 DELETE。如果要删除表定义及其数据，请使用 DROP TABLE 语句。<br>　　 对于由 FOREIGN KEY 约束引用的表，不能使用 TRUNCATE TABLE，而应使用不带 WHERE 子句的 DELETE 语句。由于 TRUNCATE TABLE 不记录在日志中，所以它不能激活触发器。<br>　　TRUNCATE TABLE 不能用于参与了索引视图的表。 </li>
-<li>COMMENT - add comments to the data dictionary 注释 </li>
-<li>GRANT - gives user’s access privileges to database 授权 </li>
-<li>REVOKE - withdraw access privileges given with the GRANT command 收回已经授予的权限</li>
-</ol>
-<p>二、DML is Data Manipulation Language statements. Some examples:数据操作语言，SQL中处理数据等操作统称为数据操纵语言 </p>
-<ol>
-<li>SELECT - retrieve data from the a database 查询 </li>
-<li>INSERT - insert data into a table 添加 </li>
-<li>UPDATE - updates existing data within a table 更新 </li>
-<li>DELETE - deletes all records from a table, the space for the records remain 删除 </li>
-<li>CALL - call a PL/SQL or Java subprogram </li>
-<li>EXPLAIN PLAN - explain access path to data<br>Oracle RDBMS执行每一条SQL语句，都必须经过Oracle优化器的评估。所以，了解优化器是如何选择(搜索)路径以及索引是如何被使用的，对优化SQL语句有很大的帮助。Explain可以用来迅速方便地查出对于给定SQL语句中的查询数据是如何得到的即搜索路径(我们通常称为Access Path)。从而使我们选择最优的查询方式达到最大的优化效果。 </li>
-<li>LOCK TABLE - control concurrency 锁，用于控制并发 </li>
-</ol>
-<p>三、DCL is Data Control Language statements. Some examples:数据控制语言，用来授予或回收访问数据库的某种特权，并控制数据库操纵事务发生的时间及效果，对数据库实行监视等 </p>
-<ol>
-<li>COMMIT - save work done 提交 </li>
-<li>SAVEPOINT - identify a point in a transaction to which you can later roll back 保存点 </li>
-<li>ROLLBACK - restore database to original since the last COMMIT 回滚 </li>
-<li>SET TRANSACTION - Change transaction options like what rollback segment to use 设置当前事务的特性，它对后面的事务没有影响． </li>
-</ol>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
-    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-      <span>赏</span>
-    </button>
-    <div id="QR" style="display: none;">
-      
-        <div id="wechat" style="display: inline-block">
-          <img id="wechat_qr" src="/images/wechat_pay.JPG" alt="shyvampire WeChat Pay"/>
-          <p>微信打赏</p>
-        </div>
-      
-      
-        <div id="alipay" style="display: inline-block">
-          <img id="alipay_qr" src="/images/alipay.JPG" alt="shyvampire Alipay"/>
-          <p>支付宝打赏</p>
-        </div>
-      
-    </div>
-  </div>
-
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/DDL/" rel="tag">#DDL</a>
-          
-            <a href="/tags/DML/" rel="tag">#DML</a>
-          
-            <a href="/tags/DCL/" rel="tag">#DCL</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/09/25/eclipse/" rel="next" title="eclipse">
-                <i class="fa fa-chevron-left"></i> eclipse
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
-      
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_tqq"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_button_douban"></a>
-  <a class="jiathis_button_renren"></a>
-  <a class="jiathis_button_qzone"></a>
-  <a class="jiathis_button_kaixin001"></a>
-  <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-  var jiathis_config={
-    hideMore:false
-  }
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-      
-    </div>
+    
   </div>
+
+  
 
 
           </div>
@@ -479,14 +309,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/09/30/db/"
-           data-title="db" data-url="http://shy0316.github.io/2016/09/30/db/">
-      </div>
-    
-  </div>
-
 
         </div>
         
@@ -506,17 +328,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel ">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/1.png"
@@ -527,7 +340,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -544,7 +357,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -586,17 +399,6 @@
 
       </section>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#详细解释："><span class="nav-number">1.</span> <span class="nav-text">详细解释：</span></a></li></ol></div>
-            
-          </div>
-        </section>
       
 
     </div>
@@ -700,10 +502,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
 
   
 
