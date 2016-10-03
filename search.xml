@@ -26,9 +26,8 @@
     } catch (IOException e) {
         e.printStackTrace();
     }
-
 }
-</code></pre><h2 id=""><a href="#" class="headerlink" title="   }"></a>   }</h2><p>注意classes.txt里得每行所写的类都要有构造方法</p>
+</code></pre><h2 id=""><a href="#" class="headerlink" title="}"></a>}</h2><p>注意classes.txt里得每行所写的类都要有构造方法</p>
 ]]></content>
     </entry>
     
