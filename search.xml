@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title><![CDATA[反射生成类实例]]></title>
+      <url>http://shy0316.github.io/2016/10/03/%E5%8F%8D%E5%B0%84%E7%94%9F%E6%88%90%E7%B1%BB%E5%AE%9E%E4%BE%8B/</url>
+      <content type="html"><![CDATA[<h2 id="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）"><a href="#反射（把类名分行写入文本文件，读取每行则生成对应的类实例）" class="headerlink" title="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）"></a>反射（把类名分行写入文本文件，读取每行则生成对应的类实例）</h2><a id="more"></a>
+<p>ps:也可以想象为java如何在文件中读取一个字符串并创建以这个字符为名字的类的对象）<br>package shy;</p>
+<p>import java.io.BufferedReader;</p>
+<p>import java.io.File;<br>import java.io.FileNotFoundException;<br>import java.io.FileReader;<br>import java.io.IOException;</p>
+<p>import javax.annotation.processing.Filer;</p>
+<p>public class ReadReflect {<br>    public static void main(String[] args){<br>        FileReader fReader=null;<br>        BufferedReader bReader=null;<br>        try {<br>            fReader = new FileReader(“src//shy//classes.txt”);<br>        } catch (FileNotFoundException e) {<br>            e.printStackTrace();<br>        }<br>        bReader = new BufferedReader(fReader);<br>        String s=””;<br>        Object c=null;<br>        try {<br>            while((s=bReader.readLine())!=null){<br>                System.out.println(s);<br>                  try {<br>                    try {<br>                        //forName(全类名)<br>                        c=(Object) Class.forName(“shy.”+s).newInstance();</p>
+<pre><code>                    System.out.println(c.toString());
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+}
+</code></pre><h2 id=""><a href="#" class="headerlink" title="   }"></a>   }</h2><p>注意classes.txt里得每行所写的类都要有构造方法</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[java comparator]]></title>
       <url>http://shy0316.github.io/2016/10/02/java-comparator/</url>
       <content type="html"><![CDATA[<h2 id="java-集合中自定义对象的几种排序方法"><a href="#java-集合中自定义对象的几种排序方法" class="headerlink" title="java 集合中自定义对象的几种排序方法"></a>java 集合中自定义对象的几种排序方法</h2> <a id="more"></a>

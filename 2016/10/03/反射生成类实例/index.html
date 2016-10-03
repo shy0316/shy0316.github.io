@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript," />
+  <meta name="keywords" content="java,反射," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="javascript–Array对象的常用属性和方法">
+<meta name="description" content="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jsarray">
-<meta property="og:url" content="http://shy0316.github.io/2016/09/20/jsarray/index.html">
+<meta property="og:title" content="反射生成类实例">
+<meta property="og:url" content="http://shy0316.github.io/2016/10/03/反射生成类实例/index.html">
 <meta property="og:site_name" content="SHY'S BLOG">
-<meta property="og:description" content="javascript–Array对象的常用属性和方法">
-<meta property="og:updated_time" content="2016-09-20T13:41:48.371Z">
+<meta property="og:description" content="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）">
+<meta property="og:updated_time" content="2016-10-03T12:44:12.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jsarray">
-<meta name="twitter:description" content="javascript–Array对象的常用属性和方法">
+<meta name="twitter:title" content="反射生成类实例">
+<meta name="twitter:description" content="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://shy0316.github.io/2016/09/20/jsarray/"/>
+  <link rel="canonical" href="http://shy0316.github.io/2016/10/03/反射生成类实例/"/>
 
-  <title> jsarray | SHY'S BLOG </title>
+  <title> 反射生成类实例 | SHY'S BLOG </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +284,7 @@
             
             
               
-                jsarray
+                反射生成类实例
               
             
           </h1>
@@ -296,8 +296,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-20T21:13:33+08:00" content="2016-09-20">
-              2016-09-20
+            <time itemprop="dateCreated" datetime="2016-10-03T20:34:09+08:00" content="2016-10-03">
+              2016-10-03
             </time>
           </span>
 
@@ -307,8 +307,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/20/jsarray/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/20/jsarray/" itemprop="commentsCount"></span>
+                <a href="/2016/10/03/反射生成类实例/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/03/反射生成类实例/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -318,7 +318,7 @@
 
           
           
-             <span id="/2016/09/20/jsarray/" class="leancloud_visitors" data-flag-title="jsarray">
+             <span id="/2016/10/03/反射生成类实例/" class="leancloud_visitors" data-flag-title="反射生成类实例">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -340,12 +340,29 @@
       
 
       
-        <p>javascript–Array对象的常用属性和方法<br><a id="more"></a></p>
-<h2 id="Array对象的常用属性和方法"><a href="#Array对象的常用属性和方法" class="headerlink" title="Array对象的常用属性和方法"></a>Array对象的常用属性和方法</h2><h3 id="1-Array对象的常用属性"><a href="#1-Array对象的常用属性" class="headerlink" title="1. Array对象的常用属性"></a>1. Array对象的常用属性</h3><p>(1)length<br>数组的长度，将新元素添加时，此属性会自动更新，语法格式：myarray.length<br>(2)prototype<br>给数组添加新的属性和方法，语法格式：Array.prototype.methodname=functionname([参数]) ||Array.prototype.attributename=值</p>
-<h3 id="2-Array对象的常用方法"><a href="#2-Array对象的常用方法" class="headerlink" title="2. Array对象的常用方法"></a>2. Array对象的常用方法</h3><p>(1)concat连接方法<br>连接2个数组，组成新的数组，语法格式：array1.concat(array2);<br>(2)join分隔方法<br>与String对象的split方法相反，将数组中所有元素连接为一个字符串，各个元素间可通过分隔符进行连接，语法格式：array.join(separator);<br>eg:<br>    var str1=”this is a string “;<br>    var arr = str1.split(“”);<br>    var str2 = arr.join(“,”);<br>    with(document){</p>
-<pre><code>write(str2);
+        <h2 id="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）"><a href="#反射（把类名分行写入文本文件，读取每行则生成对应的类实例）" class="headerlink" title="反射（把类名分行写入文本文件，读取每行则生成对应的类实例）"></a>反射（把类名分行写入文本文件，读取每行则生成对应的类实例）</h2><a id="more"></a>
+<p>ps:也可以想象为java如何在文件中读取一个字符串并创建以这个字符为名字的类的对象）<br>package shy;</p>
+<p>import java.io.BufferedReader;</p>
+<p>import java.io.File;<br>import java.io.FileNotFoundException;<br>import java.io.FileReader;<br>import java.io.IOException;</p>
+<p>import javax.annotation.processing.Filer;</p>
+<p>public class ReadReflect {<br>    public static void main(String[] args){<br>        FileReader fReader=null;<br>        BufferedReader bReader=null;<br>        try {<br>            fReader = new FileReader(“src//shy//classes.txt”);<br>        } catch (FileNotFoundException e) {<br>            e.printStackTrace();<br>        }<br>        bReader = new BufferedReader(fReader);<br>        String s=””;<br>        Object c=null;<br>        try {<br>            while((s=bReader.readLine())!=null){<br>                System.out.println(s);<br>                  try {<br>                    try {<br>                        //forName(全类名)<br>                        c=(Object) Class.forName(“shy.”+s).newInstance();</p>
+<pre><code>                    System.out.println(c.toString());
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
+            } catch (InstantiationException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+
+        }
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
 }
-</code></pre><p>(3)push追加方法<br>该方法将所指定的数据加到数组中，该方法的返回值为添加后的数组的长度，语法格式：array.push([data1[,data2[,…]]])<br>var newlength=array.push(“a”,23,”h”);//返回值为长度<br>(4)reverse倒转方法<br>反序排列，语法格式：arr.reverse();<br>(5)slice切片方法<br>提取数组中的一个片段或字符串，并将其作为新数组返回，而不修改原始数组。返回数组包括start元素到end元素（不包括此元素）的所有元素<br>语法格式：array.slice([start[,end]])<br>(6)sort排序方法<br>该方法对数组中的所有元素按unicode编码进行排序，并返回排序后的数组，语法格式：arr.sort([cmpfun(arg1,arg2)])<br>它默认按升序进行排列，也可以通过指定对比函数实现特殊的排序要求，对比函数格式comparefunction(arg1,arg2)<br>(7)splice<br>该方法通过指定起始索引和数据个数的方式，删除或替换数组中的部分数据，该方法返回值为被删除或替换的数据，语法格式：arr.splice(strat,count[,data1[,data2[,…]]])</p>
+</code></pre><h2 id=""><a href="#" class="headerlink" title="   }"></a>   }</h2><p>注意classes.txt里得每行所写的类都要有构造方法</p>
 
       
     </div>
@@ -389,7 +406,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag">#javascript</a>
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+            <a href="/tags/反射/" rel="tag">#反射</a>
           
         </div>
       
@@ -398,17 +417,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/11/tomcat/" rel="next" title="tomcat">
-                <i class="fa fa-chevron-left"></i> tomcat
+              <a href="/2016/10/02/java-comparator/" rel="next" title="java comparator">
+                <i class="fa fa-chevron-left"></i> java comparator
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/25/eclipse/" rel="prev" title="eclipse">
-                eclipse <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -457,8 +472,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/20/jsarray/"
-           data-title="jsarray" data-url="http://shy0316.github.io/2016/09/20/jsarray/">
+      <div class="ds-thread" data-thread-key="2016/10/03/反射生成类实例/"
+           data-title="反射生成类实例" data-url="http://shy0316.github.io/2016/10/03/反射生成类实例/">
       </div>
     
   </div>
@@ -569,7 +584,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Array对象的常用属性和方法"><span class="nav-number">1.</span> <span class="nav-text">Array对象的常用属性和方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Array对象的常用属性"><span class="nav-number">1.1.</span> <span class="nav-text">1. Array对象的常用属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Array对象的常用方法"><span class="nav-number">1.2.</span> <span class="nav-text">2. Array对象的常用方法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#反射（把类名分行写入文本文件，读取每行则生成对应的类实例）"><span class="nav-number">1.</span> <span class="nav-text">反射（把类名分行写入文本文件，读取每行则生成对应的类实例）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text">   }</span></a></li></ol></div>
             
           </div>
         </section>
