@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[java中Action层，service层，modle层和Dao层的区别 ]]></title>
       <url>http://shy0316.github.io/2016/10/17/java%E4%B8%ADAction%E5%B1%82%EF%BC%8Cservice%E5%B1%82%EF%BC%8Cmodle%E5%B1%82%E5%92%8CDao%E5%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-      <content type="html"><![CDATA[<p>…<br><a id="more"></a></p>
+      <content type="html"><![CDATA[<p>…<br> <a id="more"></a></p>
 <pre><code> 1. Modle层就是对应的数据库表的实体类entity;
  Dao&lt;数据访问层&gt;层是使用了Hibernate连接、操作数据库，实现数据的持久化（把内存中的数据永久保存到硬盘中）；
  Service&lt;业务逻辑层&gt;层：引用对应的Dao数据库操作；
