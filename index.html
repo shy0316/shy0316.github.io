@@ -286,6 +286,144 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/17/java中Action层，service层，modle层和Dao层的区别/" itemprop="url">
+                  java中Action层，service层，modle层和Dao层的区别 
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-17T10:06:01+08:00" content="2016-10-17">
+              2016-10-17
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/17/java中Action层，service层，modle层和Dao层的区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/17/java中Action层，service层，modle层和Dao层的区别/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/17/java中Action层，service层，modle层和Dao层的区别/" class="leancloud_visitors" data-flag-title="java中Action层，service层，modle层和Dao层的区别 ">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<pre><code> 1. Modle层就是对应的数据库表的实体类entity;
+ Dao&lt;数据访问层&gt;层是使用了Hibernate连接、操作数据库，实现数据的持久化（把内存中的数据永久保存到硬盘中）；
+ Service&lt;业务逻辑层&gt;层：引用对应的Dao数据库操作；
+ Action层：控制器、引用对应的Service层，在这里结合struts的配置文件，跳转至指定页面
+ 界面层；
+ service 为 action 提供统计的调用接口，封装持久层的 DAO.
+ Action是管理业务（Service）调度和管理跳转的。 
+ Service是管理具体的功能的。 
+ Action只负责管理，而Service负责实施。 
+
+ 2. 三大框架Struts/Hibernate/Spring 
+   Struts——控制用的； 
+   Hibernate——操作数据库的； 
+   Spring——解耦用的。
+   Struts、Spring、Hibernate在各层的作用： 
+    （1）Struts负责Web层：ActionFormBean接收网页中表单提交的数据，然后通过Action进行处理，再Forward到对应的网页。在Struts-config.xml中定义，ActionServlet会加载。 
+    （2） Spring负责业务层管理，即Service（或Manager）。 
+        Service为action提供统计的调用接口，封装持久层的DAO； 
+        可以写一些自己的业务方法； 
+        统一的Javabean管理方法； 
+        声明式事务管理； 
+        集成Hibernate。 
+    （3）Hibernate，负责持久化层，完成对数据库的crud操作。提供OR/Mapping。它由一组.hbm.xml文件和POJO，是跟数据库中的表相对应的。然后定义DAO，这些是跟数据库打交道的类，它们会使用PO。
+
+3. 框架业务逻辑分析： 
+    在Struts + Spring + Hibernate的系统中， 
+    对象的调用流程是：JSP—Action—Service—DAO—Hibernate。 
+</code></pre><p>。    </p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/10/03/反射生成类实例/" itemprop="url">
                   反射生成类实例
                 </a>
@@ -377,118 +515,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/02/java-comparator/" itemprop="url">
-                  java comparator
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-02T19:09:43+08:00" content="2016-10-02">
-              2016-10-02
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/02/java-comparator/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/02/java-comparator/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/10/02/java-comparator/" class="leancloud_visitors" data-flag-title="java comparator">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="java-集合中自定义对象的几种排序方法"><a href="#java-集合中自定义对象的几种排序方法" class="headerlink" title="java 集合中自定义对象的几种排序方法"></a>java 集合中自定义对象的几种排序方法</h2>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/02/java-comparator/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -534,7 +560,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -551,7 +577,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
